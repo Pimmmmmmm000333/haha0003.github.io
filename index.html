@@ -3,15 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Pim's Language Journey</title>
 
   <style>
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
       color: #222;
     }
+
+    /* MENU */
+
+    nav {
+      background: black;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #bbb;
+    }
+
+    /* HEADER */
 
     header {
       height: 100vh;
@@ -41,12 +67,11 @@
       padding: 14px 28px;
       background: white;
       color: black;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
       border: none;
+      border-radius: 8px;
+      font-size: 18px;
       cursor: pointer;
+      transition: 0.3s;
     }
 
     .btn:hover {
@@ -78,12 +103,24 @@
       text-align: center;
       padding: 40px;
     }
+
   </style>
 </head>
 
 <body>
 
+<!-- MENU -->
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#goals">Goals</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HEADER -->
+
 <header>
+
   <h1>Pim's Language Journey 🌏</h1>
 
   <p>
@@ -94,7 +131,10 @@
   <button class="btn" onclick="showMessage()">
     Click Me 🎀
   </button>
+
 </header>
+
+<!-- ABOUT -->
 
 <section id="about">
 
@@ -105,14 +145,16 @@
       Hello! My name is Pim from Thailand 🇹🇭
 
       I am passionate about improving my English and Chinese skills.
-      I created this website to document my language-learning journey,
-      share my experiences, and connect with people around the world.
+      I created this website to document my language-learning journey
+      and connect with people around the world.
     </p>
   </div>
 
 </section>
 
-<section>
+<!-- GOALS -->
+
+<section id="goals">
 
   <h2>My Goals</h2>
 
@@ -122,34 +164,38 @@
       <li>Practice speaking confidently</li>
       <li>Learn Chinese communication skills</li>
       <li>Connect with international friends</li>
-      <li>Build global opportunities</li>
     </ul>
   </div>
 
 </section>
 
-<section>
+<!-- CONTACT -->
 
-  <h2>Why Languages Matter To Me</h2>
+<section id="contact">
+
+  <h2>Contact</h2>
 
   <div class="card">
-    <p>
-      I believe languages can change our lives.
-      They allow us to connect with people, understand different cultures,
-      and open doors to opportunities we never imagined before.
-    </p>
+    <p>Instagram: @yourusername</p>
+    <p>Email: your@email.com</p>
   </div>
 
 </section>
+
+<!-- FOOTER -->
 
 <footer>
   <p>© 2026 Pim's Language Journey</p>
 </footer>
 
+<!-- JAVASCRIPT -->
+
 <script>
+
   function showMessage() {
     alert("Welcome to Pim's website ✨");
   }
+
 </script>
 
 </body>
