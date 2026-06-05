@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +9,45 @@
 
   <style>
 
+    /* MAIN */
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #D3968C;
-      color: #105666;
+      background: #839958; /* moss green */
+      color: #105666; /* midnight green */
     }
 
     /* MENU */
 
     nav {
-      background: rosy brown;
+      background: #D3968C; /* rosy brown */
       padding: 20px;
       text-align: center;
       position: sticky;
       top: 0;
+      z-index: 1000;
     }
 
     nav a {
-      color: midnight green;
+      color: #105666;
       text-decoration: none;
       margin: 0 20px;
       font-size: 18px;
+      font-weight: bold;
       transition: 0.3s;
     }
 
     nav a:hover {
-      color: #105666;
+      color: #F7F4D5; /* beige */
     }
 
     /* HEADER */
 
     header {
       height: 100vh;
-      background: linear-gradient(to right, #D3968C, #444);
-      color: moss green;
+      background: linear-gradient(to bottom right, #839958, #D3968C);
+      color: #F7F4D5;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -52,31 +57,38 @@
     }
 
     header h1 {
-      font-size: 60px;
+      font-size: 65px;
       margin-bottom: 10px;
     }
 
     header p {
       font-size: 22px;
-      max-width: 700px;
-      opacity: 0.9;
+      max-width: 800px;
+      line-height: 1.8;
     }
+
+    /* BUTTON */
 
     .btn {
       margin-top: 30px;
-      padding: 14px 28px;
-      background: white;
-      color: black;
+      padding: 14px 30px;
+      background: #F7F4D5;
+      color: #105666;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-size: 18px;
+      font-weight: bold;
       cursor: pointer;
       transition: 0.3s;
     }
 
     .btn:hover {
       transform: scale(1.05);
+      background: #105666;
+      color: #F7F4D5;
     }
+
+    /* SECTIONS */
 
     section {
       max-width: 1000px;
@@ -85,23 +97,40 @@
     }
 
     h2 {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 20px;
+      color: #F7F4D5;
     }
+
+    /* CARD */
 
     .card {
-      background: white;
-      padding: 30px;
+      background: #F7F4D5;
+      color: #105666;
+      padding: 35px;
       margin-bottom: 25px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      border-radius: 18px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+      line-height: 1.9;
+      font-size: 18px;
     }
 
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    /* FOOTER */
+
     footer {
-      background: #111;
-      color: white;
+      background: #105666;
+      color: #F7F4D5;
       text-align: center;
       padding: 40px;
+      margin-top: 50px;
     }
 
   </style>
@@ -109,99 +138,126 @@
 
 <body>
 
-<!-- MENU -->
+  <!-- MENU -->
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#goals">Goals</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#goals">Goals</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<!-- HEADER -->
+  <!-- HEADER -->
 
-<header>
+  <header>
 
-  <h1>03's Journal ;)</h1>
+    <h1>03's Journal ✨</h1>
 
-  <p>
-      Helloo guys ♡
-    Welcome to the first website I’ve ever coded by myself ✨
-    Hope you enjoy my little corner of the internet and my chaotic journal entries.
-    I’m still learning, but trust me, this site is gonna get way more slay soon.
-                                                    Love ya xoxo <3
-  </p>
-
-  <button class="btn" onclick="showMessage()">
-    Click Me 🎀
-  </button>
-
-</header>
-
-<!-- ABOUT -->
-
-<section id="about">
-
-  <h2>About Me</h2>
-
-  <div class="card">
     <p>
-      It’s me again! my name is Pim
-
-      I was born on December 3rd, 2001, and I have a long-time doggie best friend named Army. He’s the cutest, most loyal, and most comforting companion ever, and genuinely one of my closest friends in life 🐶
-      I’m still figuring out what I want this website to become, but trust me… it’s gonna absolutely eat once I fully lock in 😭
-      This is actually my first time trying to code, so welcome to my chaotic little digital world. I’ll probably keep adding random thoughts, language-learning moments, late-night ideas, cute memories, and whatever future version of me decides to create here ♡
-      Anywayyy thank you for being here and visiting my tiny corner of the internet ✨ xoxo
+      Helloo guys ♡ Welcome to the first website I’ve ever coded by myself.
+      Hope you enjoy my little corner of the internet and my chaotic journal entries.
+      I’m still learning, but trust me, this site is gonna get way more slay soon 😭
+      Love ya xoxo &lt;3
     </p>
-  </div>
 
-</section>
+    <button class="btn" onclick="showMessage()">
+      Click Me 🎀
+    </button>
 
-<!-- GOALS -->
+  </header>
 
-<section id="goals">
+  <!-- ABOUT -->
 
-  <h2>My Goals</h2>
+  <section id="about">
 
-  <div class="card">
-    <ul>
-      <li>Improve English fluency</li>
-      <li>Practice speaking confidently</li>
-      <li>Learn Chinese communication skills</li>
-      <li>I’m still figuring out my adult life too, so if this website looks a little chaotic sometimes, just know the owner of it is also buffering mentally 24/7 😭</li>
-    </ul>
-  </div>
+    <h2>About Me</h2>
 
-</section>
+    <div class="card">
 
-<!-- CONTACT -->
+      <p>
+        It’s me again — my name is Pim ✨
+      </p>
 
-<section id="contact">
+      <p>
+        I was born on December 3rd, 2001, and I have a long-time doggie best friend named Army.
+        He’s the cutest, most loyal, and most comforting companion ever,
+        and genuinely one of my closest friends in life 🐶
+      </p>
 
-  <h2>Contact</h2>
+      <p>
+        I’m still figuring out what I want this website to become,
+        but trust me… it’s gonna absolutely eat once I fully lock in 😭
+      </p>
 
-  <div class="card">
-    <p>Instagram: 12345678p93</p>
-    <p>Email: kittapornintanan@gmail.com (for work only)</p>
-  </div>
+      <p>
+        This is actually my first time trying to code,
+        so welcome to my chaotic little digital world.
+        I’ll probably keep adding random thoughts,
+        language-learning moments, late-night ideas,
+        cute memories, and whatever future version of me decides to create here ♡
+      </p>
 
-</section>
+      <p>
+        Also… I’m still figuring out my adult life too,
+        so if this website looks a little chaotic sometimes,
+        just know the owner of it is also buffering mentally 24/7 😭
+      </p>
 
-<!-- FOOTER -->
+    </div>
 
-<footer>
-  <p>© 2026 03's Journal</p>
-</footer>
+  </section>
 
-<!-- JAVASCRIPT -->
+  <!-- GOALS -->
 
-<script>
+  <section id="goals">
 
-  function showMessage() {
-    alert("hehehe ✨");
-  }
+    <h2>My Goals</h2>
 
-</script>
+    <div class="card">
+
+      <ul>
+        <li>Improve English fluency</li>
+        <li>Practice speaking confidently</li>
+        <li>Learn Chinese communication skills</li>
+        <li>Build global opportunities</li>
+        <li>Survive adulthood somehow 😭</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="card">
+
+      <p>Instagram: @12345678p93</p>
+      <p>Email: kittapornintanan@gmail.com (for work only)</p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>© 2026 03's Journal ✨</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function showMessage() {
+      alert("hehehe welcome to my chaotic little website ✨");
+    }
+
+  </script>
 
 </body>
+
 </html>
 ```
