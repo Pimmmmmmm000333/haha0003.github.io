@@ -45,6 +45,8 @@
       border-radius: 8px;
       font-weight: bold;
       transition: 0.3s;
+      border: none;
+      cursor: pointer;
     }
 
     .btn:hover {
@@ -82,14 +84,16 @@
 <body>
 
 <header>
-  <h1>Pim's Language Journey</h1>
+  <h1>Pim's Language Journey 🌏</h1>
 
   <p>
     Thai native speaker improving English and Chinese
     through communication, culture, and continuous learning.
   </p>
 
-  <a href="#about" class="btn">Explore My Journey</a>
+  <button class="btn" onclick="showMessage()">
+    Click Me 🎀
+  </button>
 </header>
 
 <section id="about">
@@ -141,6 +145,12 @@
 <footer>
   <p>© 2026 Pim's Language Journey</p>
 </footer>
+
+<script>
+  function showMessage() {
+    alert("Welcome to Pim's website ✨");
+  }
+</script>
 
 </body>
 </html>
